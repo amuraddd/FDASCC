@@ -1,0 +1,26 @@
+{
+    "id": "F09CF76F",
+    "path": "C:/Users/alley/Desktop/folders/courses-and-certifications/phd-cs/research/1d_fda/FDASCC/man/scc.1D.Rd",
+    "project_path": "man/scc.1D.Rd",
+    "type": "r_doc",
+    "hash": "1895755488",
+    "contents": "",
+    "dirty": false,
+    "created": 1652040745053.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1652037624,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1652037624,
+    "read_only": true,
+    "read_only_alternatives": [
+        "R/scc.1D.R"
+    ]
+}

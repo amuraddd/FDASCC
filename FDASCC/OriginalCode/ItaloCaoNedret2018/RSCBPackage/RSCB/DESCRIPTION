@@ -1,0 +1,15 @@
+Package: RSCB
+Type: Package
+Title: Robust Simultaneous Confidence Band for Mean Function of
+        Functional Datasets
+Version: 0.1.0
+Author: Italo Lima <izc0007@tigermail.auburn.edu>, Guanqun Cao
+    <gzc0009@tigermail.auburn.edu>, Nedret Billor <billone@auburn.edu>
+Maintainer: Italo Lima <izc0007@tigermail.auburn.edu>
+Description: Provide tools for robust simultaneous inference for the mean function of functional datasets.
+    Calculate robust estimator for the mean function using an M-based B-spline smoothed robust estimator and calculate robust simultaneous confidence band for the mean function. Non-robust estimators are also available, based on  least square B-spline smoothing.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: splines, VGAM, MASS, reshape2
+Built: R 3.3.2; ; 2017-06-09 04:33:30 UTC; unix
