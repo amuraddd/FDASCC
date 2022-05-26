@@ -30,4 +30,4 @@ Runnning the Python code above will download the required dependencies along wit
 -----------------
 ### Run the exmaples in example.R  
 
-Follow the code in `fdascc_examples.ipynb` to run the examples in `examples.R`. The python wrapper utilizes the library `rpy2` which is a python interface for `R`. The documentation for this library can be found at this [link](https://rpy2.github.io/doc/latest/html/introduction.html). 
+Follow the code in `fdascc_examples.ipynb` to run the examples in `examples.R`. The python wrapper utilizes the library `rpy2` which is a python interface for `R`. The documentation for this library can be found at this [link](https://rpy2.github.io/doc/latest/html/introduction.html). A sample notebook `rpy2_functionality.ipynb` is also provided which shows the basic functionality of the `rpy2` library.
