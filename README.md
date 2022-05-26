@@ -21,8 +21,8 @@ Run the code snippet below - prior to running the code make sure R is installed 
 
 ```python
 from FDASCC_py.setup import set_r_home, install_fdascc
-install_fdascc(path_to_R=<path for where R is downloaded on your computer>, 
-              path_to_fdascc=<path where the FDASCC R Package is saved on your computer>)
+install_fdascc(path_to_R="<path for where R is downloaded on your computer>", 
+              path_to_fdascc="<path where the FDASCC R Package is saved on your computer>")
 ```
 
 Runnning the Python code above will download the required dependencies along with the FDASCC R package into your R environment which can then be sourced in Python.
