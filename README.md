@@ -7,7 +7,7 @@
 - have the FDASCC folder saved on their machine
 - run the install_fdascc function with the location of the FDASCC folder to download the R code as a package
 -----------------  
-### To run the exmaples in example.R
+### Set up  
 1. Install R Version 3.6.3  
     - [Download R for Windows](https://cran.r-project.org/)
     - [Download R for Mac](https://cran.r-project.org/)
@@ -26,3 +26,8 @@ install_fdascc(path_to_R="<path for where R is downloaded on your computer>",
 ```
 
 Runnning the Python code above will download the required dependencies along with the FDASCC R package into your R environment which can then be sourced in Python.
+
+-----------------
+### Run the exmaples in example.R  
+
+Follow the code in `fdascc_examples.ipynb` to run the examples in `examples.R`. The python wrapper utilizes the library `rpy2` which is a python interface for `R`. The documentation for this library can be found at this [link](https://rpy2.github.io/doc/latest/html/introduction.html). 
