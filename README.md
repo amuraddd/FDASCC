@@ -4,7 +4,7 @@
 1. Install R
     - [Download R for Windows](https://cran.r-project.org/)
     - [Download R for Mac](https://cran.r-project.org/)
-    - [Download R for Linux](Debian, Fedora/Redhat, Ubuntu)
+    - [Download R for Linux](https://cran.r-project.org/)
 
 The following steps only need to be done once to set up the base R environment:  
 2. Install gtools, splines2, pracma, RSpectra libraries using install.packages  
