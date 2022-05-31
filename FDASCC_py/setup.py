@@ -1,7 +1,7 @@
 '''
 Utility Functions to set up FDASCC Package
 '''
-def install_fdascc(path_to_R='C:/Users/alley/AppData/Local/R-3.6.3', path_to_fdascc="C:/Users/alley/Desktop/folders/courses-and-certifications/phd-cs/research/FDASCC/FDASCC/FDASCC"):
+def setup_fdascc(path_to_R='C:/Users/alley/AppData/Local/R-3.6.3', path_to_fdascc="C:/Users/alley/Desktop/folders/courses-and-certifications/phd-cs/research/FDASCC/FDASCC/FDASCC"):
     import os
     if 'r_home' in os.environ:
         print(f"r_home is already set to {os.environ['r_home']}")
@@ -26,8 +26,11 @@ def install_fdascc(path_to_R='C:/Users/alley/AppData/Local/R-3.6.3', path_to_fda
         utils.install_packages(StrVector(names_to_install))
     
     # install FDASCC
-    utils.install_packages(path_to_fdascc,
-                           # lib=path_to_R+'\library',
-                           repos=rpy2.rinterface.NULL,
-                           type="source")
-    print("FDASCC successfully installed")
+    if rpackages.isinstalled('FDASCC'):
+        print("FDASCC Installed")
+    else:
+        utils.install_packages(path_to_fdascc,
+                               # lib=path_to_R+'\library',
+                               repos=rpy2.rinterface.NULL,
+                               type="source")
+        print("FDASCC Successfully Installed")
