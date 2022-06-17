@@ -19,6 +19,8 @@ import rpy2.robjects.packages as rpackages
 from rpy2.robjects.conversion import localconverter
 from rpy2.robjects.functions import SignatureTranslatedFunction as STM
 
+from IPython.display import display, Markdown, Latex
+
 def check_fdascc_install():
     """
     Check if FDASCC is installed
@@ -84,10 +86,12 @@ def scc_1D_one_sample(Y, X, X_band, generate_plots=True):
             scc_temp = scc[:, :, i]
             plt.plot(X_band, mhat_pred[0])
             plt.ylim(min(scc_temp[:, 0])-1, max(scc_temp[:, 1])+1)
-            plt.title(f"Lower SCC when alpha = {alpha[i]}")
+            plt.title(r'Lower SCC when $\alpha$ = {0}'.format(alpha[i]))
 
             plt.plot(X_band, scc_temp[:, 0], color='blue', linewidth=0.5)
             plt.plot(X_band, scc_temp[:, 1], color='blue', linewidth=0.5)
+            plt.xlabel('SCC')
+            plt.ylabel('X_Band')
             plt.show()
 
         #plot 3: derivs
@@ -109,7 +113,7 @@ def scc_1D_one_sample(Y, X, X_band, generate_plots=True):
                 plt.plot(X_band, scc_deriv_temp[:,1], color='blue')
                 plt.ylabel("mhat_deriv_pred")
                 plt.xlabel("X_band")
-                plt.title(f"Lower SCC when alpha = {alpha[i]}")
+                plt.title(r'Lower SCC when $\alpha$ = {0}'.format(alpha[i]))
                 plt.show()
         
     
@@ -170,10 +174,12 @@ def scc_1D_two_sample(Ya, Yb, X, X_band, generate_plots=True):
             scc_temp = scc[:, :, i]
             plt.plot(X_band, mhat_pred[0])
             plt.ylim(min(scc_temp[:, 0])-1, max(scc_temp[:, 1])+1)
-            plt.title(f"Lower SCC when alpha = {alpha[i]}")
+            plt.title(r'Lower SCC when $\alpha$ = {0}'.format(alpha[i]))
 
             plt.plot(X_band, scc_temp[:, 0], color='blue', linewidth=0.5)
             plt.plot(X_band, scc_temp[:, 1], color='blue', linewidth=0.5)
+            plt.xlabel('SCC')
+            plt.ylabel('X_Band')
             plt.show()
 
         #plot 3: derivs
@@ -195,7 +201,7 @@ def scc_1D_two_sample(Ya, Yb, X, X_band, generate_plots=True):
                 plt.plot(X_band, scc_deriv_temp[:,1], color='blue')
                 plt.ylabel("mhat_deriv_pred")
                 plt.xlabel("X_band")
-                plt.title(f"Lower SCC when alpha = {alpha[i]}")
+                plt.title(r'Lower SCC when $\alpha$ = {0}'.format(alpha[i]))
                 plt.show()
         
     
