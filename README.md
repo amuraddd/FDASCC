@@ -13,6 +13,8 @@
     - [Download R for Mac](https://cran.r-project.org/)
     - [Download R for Linux](https://cran.r-project.org/)
 
+2. Download Python Version 3.8
+
 The following steps only need to be done once to set up the base R environment:  
 
 Run the code snippet below - prior to running the code make sure R is installed in a location on your computer where admin priveleges are not required and also make sure the FDASCC R package is downloaded on your computer in a location which is easily accessible:
